@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "uBoardViewController.h"
 
 @implementation AppDelegate {
 }

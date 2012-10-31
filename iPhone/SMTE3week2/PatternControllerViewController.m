@@ -16,7 +16,7 @@
 
 @implementation PatternControllerViewController
 
-@synthesize uBoardNewSet;
+@synthesize uBoardNewColor;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,8 +30,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    uBoardNewSet = @"";
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -41,7 +39,7 @@
 
 - (void)viewDidDisappear:(BOOL)animated
 {
-    [self becomeFirstResponder];    
+    [self becomeFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,10 +55,9 @@
 
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
-    uBoardNewSet = @"uBoard new color";
-    [self changeuBoardSet];
+    uBoardNewColor = @"uBoard new color";
+    [self changeuBoardColor];
     NSLog(@"shake detected!\n");
-    
 }
 
 #pragma mark - ASIHTTP functions
@@ -69,41 +66,25 @@
 {
     if(request.tag == 1) {
         NSData *responseData = [request responseData];
-        NSError* error;
-        
-        // JSON is NSArray:
-        NSArray *uBoardJSON = [NSJSONSerialization JSONObjectWithData:responseData
-                                                              options:NSJSONReadingMutableContainers
-                                                                error:&error];
-        
-        if(!uBoardJSON || ![uBoardJSON count]) {
-            NSLog(@"Waiting for glow events info...");
-        }
-        else {
-            NSLog(@"%@",uBoardJSON);
-        }
     }
 }
 
 -(void) requestFailed:(ASIHTTPRequest *) request
 {
     NSError *error = [request error];
-    NSLog(@"Error: %@", error.localizedDescription);
-    
-    [self changeuBoardSet];
-}
-
-- (void) changeuBoardSet
-{
-    // Debug: http://192.168.1.103/~jimclermonts/uBoardwebboard.json
-    NSURL *url = [NSURL URLWithString:@"http://192.168.1.130"];
-    ASIHTTPRequest *request = [ASIFormDataRequest requestWithURL:url];
-    [request addRequestHeader:@"Referer" value:uBoardNewSet];
-    [request setTag:1];
-    [request setDelegate:self];
-    [request startAsynchronous];
 }
 
 #pragma mark - change uBoard mode
+
+- (void) changeuBoardColor
+{
+    NSURL *url = [NSURL URLWithString:@"http://192.168.1.130"];
+    ASIHTTPRequest *request = [ASIFormDataRequest requestWithURL:url];
+    [request addRequestHeader:@"Referer" value:uBoardNewColor];
+    [request setTag:1];
+    [request setTimeOutSeconds:1];
+    [request setDelegate:self];
+    [request startAsynchronous];
+}
 
 @end

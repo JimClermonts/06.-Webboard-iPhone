@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F1F735D16341ECE00BF7CFB /* uboardicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F1F735C16341ECE00BF7CFB /* uboardicon.png */; };
-		4F1F735F16341ED300BF7CFB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F1F735E16341ED300BF7CFB /* Default.png */; };
-		4F347C7D16136A7900D04CC2 /* uBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F347C7B16136A7900D04CC2 /* uBoardViewController.m */; };
 		4F612450162F0C8E0030073E /* PatternControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F61244F162F0C8E0030073E /* PatternControllerViewController.m */; };
 		4F93E15B15FA1A0C0013936F /* uBoardMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93E15915FA1A0C0013936F /* uBoardMenuController.m */; };
 		4FBA75DE15F9EFC40009AAEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FBA75DD15F9EFC30009AAEA /* UIKit.framework */; };
@@ -33,14 +30,12 @@
 		4FCAB686160C75450043E375 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCAB63F160C75440043E375 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4FCAB6AD160C996E0043E375 /* README-GHUnit in Resources */ = {isa = PBXBuildFile; fileRef = 4FCAB6A9160C996E0043E375 /* README-GHUnit */; };
 		4FCAB6AE160C996E0043E375 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCAB6AC160C996E0043E375 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4FF286371641750B00239E09 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FF286351641750B00239E09 /* Default.png */; };
+		4FF286381641750B00239E09 /* uboardicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FF286361641750B00239E09 /* uboardicon.png */; };
 		4FF2F40C162EE66F00666506 /* uBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2F40B162EE66F00666506 /* uBoard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4F1F735C16341ECE00BF7CFB /* uboardicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = uboardicon.png; path = ../uboardicon.png; sourceTree = "<group>"; };
-		4F1F735E16341ED300BF7CFB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
-		4F347C7A16136A7900D04CC2 /* uBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uBoardViewController.h; sourceTree = "<group>"; };
-		4F347C7B16136A7900D04CC2 /* uBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = uBoardViewController.m; sourceTree = "<group>"; };
 		4F61244E162F0C8E0030073E /* PatternControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatternControllerViewController.h; sourceTree = "<group>"; };
 		4F61244F162F0C8E0030073E /* PatternControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatternControllerViewController.m; sourceTree = "<group>"; };
 		4F93E15815FA1A0C0013936F /* uBoardMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uBoardMenuController.h; sourceTree = "<group>"; };
@@ -83,6 +78,8 @@
 		4FCAB6A9160C996E0043E375 /* README-GHUnit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "README-GHUnit"; sourceTree = "<group>"; };
 		4FCAB6AB160C996E0043E375 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		4FCAB6AC160C996E0043E375 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		4FF286351641750B00239E09 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Images/Default.png; sourceTree = "<group>"; };
+		4FF286361641750B00239E09 /* uboardicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = uboardicon.png; path = Images/uboardicon.png; sourceTree = "<group>"; };
 		4FF2F40A162EE66F00666506 /* uBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uBoard.h; sourceTree = "<group>"; };
 		4FF2F40B162EE66F00666506 /* uBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = uBoard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,8 +105,8 @@
 		4F248917160F4583008E5102 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				4F1F735E16341ED300BF7CFB /* Default.png */,
-				4F1F735C16341ECE00BF7CFB /* uboardicon.png */,
+				4FF286351641750B00239E09 /* Default.png */,
+				4FF286361641750B00239E09 /* uboardicon.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -154,8 +151,6 @@
 				4FBA75EC15F9EFC40009AAEA /* AppDelegate.h */,
 				4FBA75ED15F9EFC40009AAEA /* AppDelegate.m */,
 				4FBA75EF15F9EFC40009AAEA /* MainStoryboard.storyboard */,
-				4F347C7A16136A7900D04CC2 /* uBoardViewController.h */,
-				4F347C7B16136A7900D04CC2 /* uBoardViewController.m */,
 				4F93E15815FA1A0C0013936F /* uBoardMenuController.h */,
 				4F93E15915FA1A0C0013936F /* uBoardMenuController.m */,
 				4F61244E162F0C8E0030073E /* PatternControllerViewController.h */,
@@ -268,6 +263,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				English,
 			);
 			mainGroup = 4FBA75CE15F9EFC30009AAEA;
 			productRefGroup = 4FBA75DA15F9EFC30009AAEA /* Products */;
@@ -287,8 +283,8 @@
 				4FBA75E815F9EFC40009AAEA /* InfoPlist.strings in Resources */,
 				4FBA75F115F9EFC40009AAEA /* MainStoryboard.storyboard in Resources */,
 				4FCAB6AD160C996E0043E375 /* README-GHUnit in Resources */,
-				4F1F735D16341ECE00BF7CFB /* uboardicon.png in Resources */,
-				4F1F735F16341ED300BF7CFB /* Default.png in Resources */,
+				4FF286371641750B00239E09 /* Default.png in Resources */,
+				4FF286381641750B00239E09 /* uboardicon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +307,6 @@
 				4FCAB685160C75450043E375 /* ASIInputStream.m in Sources */,
 				4FCAB686160C75450043E375 /* ASINetworkQueue.m in Sources */,
 				4FCAB6AE160C996E0043E375 /* Reachability.m in Sources */,
-				4F347C7D16136A7900D04CC2 /* uBoardViewController.m in Sources */,
 				4FF2F40C162EE66F00666506 /* uBoard.m in Sources */,
 				4F612450162F0C8E0030073E /* PatternControllerViewController.m in Sources */,
 			);

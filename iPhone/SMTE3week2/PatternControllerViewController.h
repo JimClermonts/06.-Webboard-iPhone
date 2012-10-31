@@ -12,6 +12,6 @@
 {
 }
 
-@property (nonatomic, strong) NSString * uBoardNewSet;
+@property (nonatomic, strong) NSString * uBoardNewColor;
 
 @end
